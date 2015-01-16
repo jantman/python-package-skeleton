@@ -1,6 +1,6 @@
 from setuptools import setup
 from sys import version_info
-from python-package-skeleton import VERSION
+from python-package-skeleton.version import VERSION
 
 with open('README.rst') as file:
     long_description = file.read()
