@@ -19,7 +19,7 @@ setup(
     author='Jason Antman',
     author_email='jason@jasonantman.com',
     packages=['python-package-skeleton', 'python-package-skeleton.tests'],
-    url='http://github.com/jantman/pypuppetdb-daily-report/',
+    url='http://github.com/jantman/python-package-skeleton/',
     description='Description here.',
     long_description=long_description,
     install_requires=requires,
