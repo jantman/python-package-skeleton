@@ -1,4 +1,4 @@
-#!/bin/bash -x -e
+#!/bin/bash -ex
 #
 # python-package-skeleton install script
 #
@@ -21,7 +21,7 @@ do
   sed "s/python-package-skeleton/${projname}/g" ${srcdir}/${fname} > $fname
 done
 
-sed "s/python-package-skeleton/${projname}/g" ${srcdir}/README_skeleton.rst > README_skeleton.rst
+sed "s/python-package-skeleton/${projname}/g" ${srcdir}/README_skeleton.rst > README.rst
 
 mkdir -p ${projname}/tests
 touch ${projname}/__init__.py
