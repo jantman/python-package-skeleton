@@ -7,8 +7,8 @@ python-package-skeleton
 .. image:: https://pypip.in/d/python-package-skeleton/badge.png
    :target: https://crate.io/packages/python-package-skeleton
 
-.. image:: https://landscape.io/github/jantman/python-package-skeleton/landscape/landscape.svg
-   :target: https://landscape.io/github/jantman/python-package-skeleton/landscape
+.. image:: https://landscape.io/github/jantman/python-package-skeleton/master/landscape.svg
+   :target: https://landscape.io/github/jantman/python-package-skeleton/master
    :alt: Code Health
 
 .. image:: https://secure.travis-ci.org/jantman/python-package-skeleton.png?branch=master
