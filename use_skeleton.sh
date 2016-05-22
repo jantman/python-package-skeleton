@@ -12,22 +12,34 @@ then
 fi
 
 projname=$1
+mkdir $projname
+cd $projname
 
 # directory where this script lives
 srcdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-for fname in .coveragerc .landscape.yaml .travis.yml CHANGES.rst MANIFEST.in pytest.ini setup.py tox.ini
+function movefile {
+    src=$1
+    dst=$2
+    sed "s/python-package-skeleton/${projname}/g" ${srcdir}/${src} > $dst
+}
+
+mkdir -p .github docs/source
+
+for fname in .coveragerc .github/CONTRIBUTING.md .github/ISSUE_TEMPLATE.md .github/PULL_REQUEST_TEMPLATE.md .gitignore .landscape.yaml .travis.yml CHANGES.rst LICENSE MANIFEST.in pytest.ini setup.cfg setup.py tox.ini docs/Makefile docs/source/changes.rst docs/source/conf.py docs/source/index.rst docs/source/modules.rst
 do
-  sed "s/python-package-skeleton/${projname}/g" ${srcdir}/${fname} > $fname
+    movefile $fname $fname
 done
+
+mkdir docs/source/_static
+touch docs/source/_static/.gitkeep
 
 sed "s/python-package-skeleton/${projname}/g" ${srcdir}/README_skeleton.rst > README.rst
 
 mkdir -p ${projname}/tests
-touch ${projname}/__init__.py
-touch ${projname}/tests/__init__.py
-
-echo "# ${projname}" > ${projname}/version.py
-echo "VERSION = '0.0.1'" >> ${projname}/version.py
+for fname in __init__.py version.py tests/__init__.py tests/test_version.py
+do
+    movefile python-package-skeleton/${fname} ${projname}/${fname}
+done
 
 echo "Done."

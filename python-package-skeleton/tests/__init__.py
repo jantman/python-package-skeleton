@@ -34,34 +34,3 @@ AUTHORS:
 Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 ##################################################################################
 """
-
-from setuptools import setup, find_packages
-from sys import version_info
-from python-package-skeleton.version import VERSION, PROJECT_URL
-
-with open('README.rst') as file:
-    long_description = file.read()
-
-requires = [
-    'something'
-]
-
-classifiers = [
-    'Development Status :: 1 - Planning',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-]
-
-setup(
-    name='python-package-skeleton',
-    version=VERSION,
-    author='Jason Antman',
-    author_email='jason@jasonantman.com',
-    packages=find_packages(),
-    url=PROJECT_URL,
-    description='Description here.',
-    long_description=long_description,
-    install_requires=requires,
-    keywords="",
-    classifiers=classifiers
-)
