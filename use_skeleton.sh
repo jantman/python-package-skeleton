@@ -5,14 +5,14 @@
 # <https://github.com/jantman/python-package-skeleton>
 #
 
-if [ $# -eq 0]
+if [ $# -eq 0 ]
 then
   echo "USAGE: use_skeleton.sh <project name>"
   exit 1
 fi
 
 projname=$1
-mkdir $projname
+mkdir -p $projname
 cd $projname
 
 # directory where this script lives
