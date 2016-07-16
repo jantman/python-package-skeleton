@@ -3,9 +3,19 @@ python-package-skeleton
 
 .. image:: https://pypip.in/v/python-package-skeleton/badge.png
    :target: https://crate.io/packages/python-package-skeleton
+   :alt: pypi version
 
 .. image:: https://pypip.in/d/python-package-skeleton/badge.png
    :target: https://crate.io/packages/python-package-skeleton
+   :alt: pypi downloads
+
+.. image:: https://img.shields.io/github/forks/jantman/python-package-skeleton.svg
+   :alt: GitHub Forks
+   :target: https://github.com/jantman/python-package-skeleton/network
+
+.. image:: https://img.shields.io/github/issues/jantman/python-package-skeleton.svg
+   :alt: GitHub Open Issues
+   :target: https://github.com/jantman/python-package-skeleton/issues
 
 .. image:: https://landscape.io/github/jantman/python-package-skeleton/master/landscape.svg
    :target: https://landscape.io/github/jantman/python-package-skeleton/master
@@ -18,6 +28,10 @@ python-package-skeleton
 .. image:: https://codecov.io/github/jantman/python-package-skeleton/coverage.svg?branch=master
    :target: https://codecov.io/github/jantman/python-package-skeleton?branch=master
    :alt: coverage report for master branch
+
+.. image:: https://readthedocs.org/projects/python-package-skeleton/badge/?version=latest
+   :target: https://readthedocs.org/projects/python-package-skeleton/?badge=latest
+   :alt: sphinx documentation for latest release
 
 .. image:: http://www.repostatus.org/badges/0.1.0/active.svg
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
