@@ -94,10 +94,6 @@ Testing is done via `pytest <http://pytest.org/latest/>`_, driven by `tox <http:
   * ``pip install tox``
   * ``tox``
 
-* If you want to see code coverage: ``tox -e cov``
-
-  * this produces two coverage reports - a summary on STDOUT and a full report in the ``htmlcov/`` directory
-
 * If you want to pass additional arguments to pytest, add them to the tox command line after "--". i.e., for verbose pytext output on py27 tests: ``tox -e py27 -- -v``
 
 Release Checklist
@@ -107,16 +103,18 @@ Release Checklist
 2. Confirm that there are CHANGES.rst entries for all major changes.
 3. Ensure that Travis tests passing in all environments.
 4. Ensure that test coverage is no less than the last release (ideally, 100%).
-5. Increment the version number in python-package-skeleton/version.py and add version and release date to CHANGES.rst, then push to GitHub.
+5. Increment the version number in webhook2lambda2sqs/version.py and add version and release date to CHANGES.rst, then push to GitHub.
 6. Confirm that README.rst renders correctly on GitHub.
-7. Upload package to testpypi, confirm that README.rst renders correctly.
+7. Upload package to testpypi:
 
-   * Make sure your ~/.pypirc file is correct
+   * Make sure your ~/.pypirc file is correct (a repo called ``test`` for https://testpypi.python.org/pypi)
+   * ``rm -Rf dist``
    * ``python setup.py register -r https://testpypi.python.org/pypi``
-   * ``python setup.py sdist upload -r https://testpypi.python.org/pypi``
-   * Check that the README renders at https://testpypi.python.org/pypi/python-package-skeleton
+   * ``python setup.py sdist bdist_wheel``
+   * ``twine upload -r test dist/*``
+   * Check that the README renders at https://testpypi.python.org/pypi/webhook2lambda2sqs
 
-8. Create a pull request for the release to be merge into master. Upon successful Travis build, merge it.
+8. Create a pull request for the release to be merged into master. Upon successful Travis build, merge it.
 9. Tag the release in Git, push tag to GitHub:
 
    * tag the release. for now the message is quite simple: ``git tag -a vX.Y.Z -m 'X.Y.Z released YYYY-MM-DD'``
@@ -124,6 +122,6 @@ Release Checklist
 
 11. Upload package to live pypi:
 
-    * ``python setup.py sdist upload``
+    * ``twine upload dist/*``
 
 10. make sure any GH issues fixed in the release were closed.
