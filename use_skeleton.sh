@@ -11,12 +11,12 @@ then
   exit 1
 fi
 
+# directory where this script lives
+srcdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
 projname=$1
 mkdir -p $projname
 cd $projname
-
-# directory where this script lives
-srcdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 function movefile {
     src=$1
