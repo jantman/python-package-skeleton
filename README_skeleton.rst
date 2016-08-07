@@ -1,13 +1,9 @@
 python-package-skeleton
 ========================
 
-.. image:: https://pypip.in/v/python-package-skeleton/badge.png
-   :target: https://crate.io/packages/python-package-skeleton
+.. image:: https://img.shields.io/pypi/v/python-package-skeleton.svg?maxAge=2592000
+   :target: https://pypi.python.org/pypi/python-package-skeleton
    :alt: pypi version
-
-.. image:: https://pypip.in/d/python-package-skeleton/badge.png
-   :target: https://crate.io/packages/python-package-skeleton
-   :alt: pypi downloads
 
 .. image:: https://img.shields.io/github/forks/jantman/python-package-skeleton.svg
    :alt: GitHub Forks
@@ -33,9 +29,9 @@ python-package-skeleton
    :target: https://readthedocs.org/projects/python-package-skeleton/?badge=latest
    :alt: sphinx documentation for latest release
 
-.. image:: http://www.repostatus.org/badges/0.1.0/active.svg
-   :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
-   :target: http://www.repostatus.org/#active
+.. image:: http://www.repostatus.org/badges/latest/wip.svg
+   :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
+   :target: http://www.repostatus.org/#wip
 
 Introduction here.
 
@@ -50,8 +46,7 @@ Installation
 
 It's recommended that you install into a virtual environment (virtualenv /
 venv). See the `virtualenv usage documentation <http://www.virtualenv.org/en/latest/>`_
-for information on how to create a venv. If you really want to install
-system-wide, you can (using sudo).
+for information on how to create a venv.
 
 .. code-block:: bash
 
@@ -117,7 +112,7 @@ Release Checklist
 2. Confirm that there are CHANGES.rst entries for all major changes.
 3. Ensure that Travis tests passing in all environments.
 4. Ensure that test coverage is no less than the last release (ideally, 100%).
-5. Increment the version number in webhook2lambda2sqs/version.py and add version and release date to CHANGES.rst, then push to GitHub.
+5. Increment the version number in python-package-skeleton/version.py and add version and release date to CHANGES.rst, then push to GitHub.
 6. Confirm that README.rst renders correctly on GitHub.
 7. Upload package to testpypi:
 
@@ -126,13 +121,13 @@ Release Checklist
    * ``python setup.py register -r https://testpypi.python.org/pypi``
    * ``python setup.py sdist bdist_wheel``
    * ``twine upload -r test dist/*``
-   * Check that the README renders at https://testpypi.python.org/pypi/webhook2lambda2sqs
+   * Check that the README renders at https://testpypi.python.org/pypi/python-package-skeleton
 
 8. Create a pull request for the release to be merged into master. Upon successful Travis build, merge it.
 9. Tag the release in Git, push tag to GitHub:
 
-   * tag the release. for now the message is quite simple: ``git tag -a vX.Y.Z -m 'X.Y.Z released YYYY-MM-DD'``
-   * push the tag to GitHub: ``git push origin vX.Y.Z``
+   * tag the release. for now the message is quite simple: ``git tag -a X.Y.Z -m 'X.Y.Z released YYYY-MM-DD'``
+   * push the tag to GitHub: ``git push origin X.Y.Z``
 
 11. Upload package to live pypi:
 
