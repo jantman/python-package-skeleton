@@ -4,4 +4,4 @@ python-package-skeleton
 .. toctree::
    :maxdepth: 4
 
-   python-package-skeleton
+   python_package_skeleton

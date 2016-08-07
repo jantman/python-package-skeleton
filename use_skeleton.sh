@@ -15,13 +15,15 @@ fi
 srcdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 projname=$1
+projname_underscored=${projname//-/_}
+
 mkdir -p $projname
 cd $projname
 
 function movefile {
     src=$1
     dst=$2
-    sed "s/python-package-skeleton/${projname}/g" ${srcdir}/${src} > $dst
+    sed "s/python-package-skeleton/${projname}/g" ${srcdir}/${src} | sed "s/python_package_skeleton/${projname_underscored}/g" > $dst
 }
 
 mkdir -p .github docs/source

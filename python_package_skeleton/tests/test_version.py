@@ -35,7 +35,7 @@ Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 ##################################################################################
 """
 
-import python-package-skeleton.version as version
+import python_package_skeleton.version as version
 
 import re
 import sys

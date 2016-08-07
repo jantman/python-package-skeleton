@@ -36,8 +36,7 @@ Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 """
 
 from setuptools import setup, find_packages
-from sys import version_info
-from python-package-skeleton.version import VERSION, PROJECT_URL
+from python_package_skeleton.version import VERSION, PROJECT_URL
 
 with open('README.rst') as file:
     long_description = file.read()

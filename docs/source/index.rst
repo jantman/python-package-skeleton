@@ -4,13 +4,9 @@
 python-package-skeleton
 ================
 
-.. image:: https://img.shields.io/pypi/v/python-package-skeleton.svg
+.. image:: https://img.shields.io/pypi/v/python-package-skeleton.svg?maxAge=2592000
    :target: https://pypi.python.org/pypi/python-package-skeleton
-   :alt: PyPi package version
-
-.. image:: https://img.shields.io/pypi/dm/python-package-skeleton.svg
-   :target: https://pypi.python.org/pypi/python-package-skeleton
-   :alt: PyPi downloads
+   :alt: pypi version
 
 .. image:: https://img.shields.io/github/forks/jantman/python-package-skeleton.svg
    :alt: GitHub Forks
@@ -20,19 +16,13 @@ python-package-skeleton
    :alt: GitHub Open Issues
    :target: https://github.com/jantman/python-package-skeleton/issues
 
-.. image:: http://www.repostatus.org/badges/0.1.0/active.svg
-   :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
-   :target: http://www.repostatus.org/#active
-
-Master:
+.. image:: https://landscape.io/github/jantman/python-package-skeleton/master/landscape.svg
+   :target: https://landscape.io/github/jantman/python-package-skeleton/master
+   :alt: Code Health
 
 .. image:: https://secure.travis-ci.org/jantman/python-package-skeleton.png?branch=master
    :target: http://travis-ci.org/jantman/python-package-skeleton
    :alt: travis-ci for master branch
-
-.. image:: https://landscape.io/github/jantman/python-package-skeleton/master/landscape.svg
-   :target: https://landscape.io/github/jantman/python-package-skeleton/master
-   :alt: Code Health
 
 .. image:: https://codecov.io/github/jantman/python-package-skeleton/coverage.svg?branch=master
    :target: https://codecov.io/github/jantman/python-package-skeleton?branch=master
@@ -42,23 +32,9 @@ Master:
    :target: https://readthedocs.org/projects/python-package-skeleton/?badge=latest
    :alt: sphinx documentation for latest release
 
-Develop:
-
-.. image:: https://secure.travis-ci.org/jantman/python-package-skeleton.png?branch=develop
-   :target: http://travis-ci.org/jantman/python-package-skeleton
-   :alt: travis-ci for develop branch
-
-.. image:: https://landscape.io/github/jantman/python-package-skeleton/develop/landscape.svg
-   :target: https://landscape.io/github/jantman/python-package-skeleton/develop
-   :alt: Code Health
-
-.. image:: https://codecov.io/github/jantman/python-package-skeleton/coverage.svg?branch=develop
-   :target: https://codecov.io/github/jantman/python-package-skeleton?branch=develop
-   :alt: coverage report for develop branch
-
-.. image:: https://readthedocs.org/projects/python-package-skeleton/badge/?version=develop
-   :target: https://readthedocs.org/projects/python-package-skeleton/?badge=develop
-   :alt: sphinx documentation for develop branch
+.. image:: http://www.repostatus.org/badges/latest/wip.svg
+   :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
+   :target: http://www.repostatus.org/#wip
 
 
 Contents
