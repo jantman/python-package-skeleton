@@ -27,22 +27,22 @@ the issue:
 
 ### Version
 
-python-project-skeleton version, as reported by ``python-project-skeleton --version``
+python-package-skeleton version, as reported by ``python-package-skeleton --version``
 
 ### Installation Method
 
-How was python-project-skeleton installed (provide as much detail as possible, ideally
+How was python-package-skeleton installed (provide as much detail as possible, ideally
 the exact command used and whether it was installed in a virtualenv or not).
 
 ### Supporting Software Versions
 
 The output of ``python --version`` and ``virtualenv --version`` in the environment
-that python-project-skeleton is running in, as well as your operating system type and version.
+that python-package-skeleton is running in, as well as your operating system type and version.
 
 ### Actual Output
 
 ```
-Paste here the output of python-project-skeleton (including the command used to run it),
+Paste here the output of python-package-skeleton (including the command used to run it),
 run with the -vv (debug-level output) flag, that shows the issue.
 ```
 
