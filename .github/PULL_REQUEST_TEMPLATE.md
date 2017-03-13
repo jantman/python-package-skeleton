@@ -18,12 +18,12 @@ __IMPORTANT:__ Please take note of the below checklist, especially the first two
 
 ## Contributor License Agreement
 
-By submitting this work for inclusion in awslimitchecker, I agree to the following terms:
+By submitting this work for inclusion in python-package-skeleton, I agree to the following terms:
 
 * The contribution included in this request (and any subsequent revisions or versions of it)
-  is being made under the same license as the awslimitchecker project (the Affero GPL v3,
-  or any subsequent version of that license if adopted by awslimitchecker).
-* My contribution may perpetually be included in and distributed with awslimitchecker; submitting
+  is being made under the same license as the python-package-skeleton project (the Affero GPL v3,
+  or any subsequent version of that license if adopted by python-package-skeleton).
+* My contribution may perpetually be included in and distributed with python-package-skeleton; submitting
   this pull request grants a perpetual, global, unlimited license for it to be used and distributed
-  under the terms of awslimitchecker's license.
+  under the terms of python-package-skeleton's license.
 * I have the legal power and rights to agree to these terms.
