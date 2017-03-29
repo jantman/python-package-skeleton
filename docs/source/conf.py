@@ -68,7 +68,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'python-package-skeleton'
-copyright = u'2016 Jason Antman'
+copyright = u'2017 Jason Antman'
 author = u'Jason Antman'
 
 # The version info for the project you're documenting, acts as replacement for
