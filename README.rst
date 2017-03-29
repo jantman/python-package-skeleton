@@ -22,7 +22,7 @@ For people other than me, you'll probably want to do the following in the result
 
 .. code-block:: bash
 
-    find ./ -type f -exec sed -i -e 's/Jason Antman/Your Name/g' -e 's/jason@jasonantman\.com/YOUR_EMAIL/g' -e 's|http://www\.jasonantman\.com|YOUR_WEBSITE|g' -e 's/jantman/YOUR_GITHUB_USERNAME/g' {} \;
+    find ./ -path ./.git -prune -o -type f -exec sed -i -e 's/Jason Antman/Your Name/g' -e 's/jason@jasonantman\.com/YOUR_EMAIL/g' -e 's|http://www\.jasonantman\.com|YOUR_WEBSITE|g' -e 's/jantman/YOUR_GITHUB_USERNAME/g' {} \;
 
 Actions
 --------
