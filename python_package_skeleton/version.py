@@ -35,32 +35,5 @@ Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 ##################################################################################
 """
 
-from setuptools import setup, find_packages
-from python_package_skeleton.version import VERSION, PROJECT_URL
-
-with open('README.rst') as file:
-    long_description = file.read()
-
-requires = [
-    'something'
-]
-
-classifiers = [
-    'Development Status :: 1 - Planning',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-]
-
-setup(
-    name='python-package-skeleton',
-    version=VERSION,
-    author='Jason Antman',
-    author_email='jason@jasonantman.com',
-    packages=find_packages(),
-    url=PROJECT_URL,
-    description='Description here.',
-    long_description=long_description,
-    install_requires=requires,
-    keywords="",
-    classifiers=classifiers
-)
+VERSION = '0.1.0'
+PROJECT_URL = 'https://github.com/jantman/python-package-skeleton'

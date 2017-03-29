@@ -35,32 +35,40 @@ Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 ##################################################################################
 """
 
-from setuptools import setup, find_packages
-from python_package_skeleton.version import VERSION, PROJECT_URL
+import python_package_skeleton.version as version
 
-with open('README.rst') as file:
-    long_description = file.read()
+import re
+import sys
 
-requires = [
-    'something'
-]
 
-classifiers = [
-    'Development Status :: 1 - Planning',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-]
+class TestVersion(object):
 
-setup(
-    name='python-package-skeleton',
-    version=VERSION,
-    author='Jason Antman',
-    author_email='jason@jasonantman.com',
-    packages=find_packages(),
-    url=PROJECT_URL,
-    description='Description here.',
-    long_description=long_description,
-    install_requires=requires,
-    keywords="",
-    classifiers=classifiers
-)
+    def test_project_url(self):
+        expected = 'https://github.com/jantman/python-package-skeleton'
+        assert version.PROJECT_URL == expected
+
+    def test_is_semver(self):
+        # see:
+        # https://github.com/mojombo/semver.org/issues/59#issuecomment-57884619
+        semver_ptn = re.compile(
+            r'^'
+            r'(?P<MAJOR>(?:'
+            r'0|(?:[1-9]\d*)'
+            r'))'
+            r'\.'
+            r'(?P<MINOR>(?:'
+            r'0|(?:[1-9]\d*)'
+            r'))'
+            r'\.'
+            r'(?P<PATCH>(?:'
+            r'0|(?:[1-9]\d*)'
+            r'))'
+            r'(?:-(?P<prerelease>'
+            r'[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*'
+            r'))?'
+            r'(?:\+(?P<build>'
+            r'[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*'
+            r'))?'
+            r'$'
+        )
+        assert semver_ptn.match(version.VERSION) is not None

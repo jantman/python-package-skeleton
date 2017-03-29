@@ -10,11 +10,13 @@ Skeleton for a python package, complete with tox/Travis-CI, Landscape.io, codeco
 Usage
 ------
 
-From the directory you want to setup your new package in, run:
+Run:
 
     /path/to/python-package-skeleton/use_skeleton.sh <project name>
 
-You'll then need to make some updates in ``.travis.yml`` and ``setup.py``.
+This will create a ``project name`` directory under your pwd and populate it with the skeleton.
+
+You'll then need to make some updates in many of the files, but it's a good starting point.
     
 Actions
 --------
