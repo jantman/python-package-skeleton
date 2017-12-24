@@ -34,7 +34,7 @@ Introduction here.
 Requirements
 ------------
 
-* Python 2.7+ (currently tested with 2.7, 3.2, 3.3, 3.4)
+* Python 2.7 or 3.4+ (currently tested with 2.7, 3.4, 3.5, 3.6)
 * Python `VirtualEnv <http://www.virtualenv.org/>`_ and ``pip`` (recommended installation method; your OS/distribution should have packages for these)
 
 Installation
@@ -122,7 +122,7 @@ Release Checklist
 8. Create a pull request for the release to be merged into master. Upon successful Travis build, merge it.
 9. Tag the release in Git, push tag to GitHub:
 
-   * tag the release. for now the message is quite simple: ``git tag -a X.Y.Z -m 'X.Y.Z released YYYY-MM-DD'``
+   * tag the release. for now the message is quite simple: ``git tag -s -a X.Y.Z -m 'X.Y.Z released YYYY-MM-DD'``
    * push the tag to GitHub: ``git push origin X.Y.Z``
 
 11. Upload package to live pypi:
