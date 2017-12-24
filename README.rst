@@ -5,7 +5,7 @@ python-package-skeleton
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
 
-Skeleton for a python package, complete with tox/Travis-CI, Landscape.io, codecov, etc.
+Skeleton for a python package, complete with tox/Travis-CI, codecov, etc.
 
 Usage
 ------
