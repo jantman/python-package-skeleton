@@ -13,10 +13,6 @@ python-package-skeleton
    :alt: GitHub Open Issues
    :target: https://github.com/jantman/python-package-skeleton/issues
 
-.. image:: https://landscape.io/github/jantman/python-package-skeleton/master/landscape.svg
-   :target: https://landscape.io/github/jantman/python-package-skeleton/master
-   :alt: Code Health
-
 .. image:: https://secure.travis-ci.org/jantman/python-package-skeleton.png?branch=master
    :target: http://travis-ci.org/jantman/python-package-skeleton
    :alt: travis-ci for master branch
