@@ -1,5 +1,5 @@
 .. meta::
-   :description: A script and python module to check your AWS service limits and usage, and warn when usage approaches limits.
+   :description: Description of python-package-skeleton goes here.
 
 .. include:: ../../README.rst
 
