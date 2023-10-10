@@ -3,7 +3,7 @@ The latest version of this package is available at:
 <http://github.com/jantman/python-package-skeleton>
 
 ##################################################################################
-Copyright 2018 Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
+Copyright 2023 Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the “Software”), to deal in

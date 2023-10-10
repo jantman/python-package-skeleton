@@ -25,7 +25,7 @@ function movefile {
 
 mkdir -p $projname/.github $projname/docs/source/_static ${projname}/${projname_underscored}/tests
 
-for fname in .coveragerc .github/ISSUE_TEMPLATE.md .github/PULL_REQUEST_TEMPLATE.md .gitignore CHANGES.rst LICENSE MANIFEST.in pytest.ini setup.cfg setup.py tox.ini docs/Makefile docs/source/changes.rst docs/source/conf.py docs/source/index.rst docs/source/modules.rst
+for fname in .coveragerc .github/ISSUE_TEMPLATE.md .github/PULL_REQUEST_TEMPLATE.md .gitignore CHANGES.rst LICENSE MANIFEST.in setup.cfg setup.py tox.ini docs/Makefile docs/source/changes.rst docs/source/conf.py docs/source/index.rst docs/source/modules.rst
 do
     movefile $fname $fname
 done
