@@ -5,24 +5,24 @@ The latest version of this package is available at:
 ##################################################################################
 Copyright 2018 Jason Antman <jason@jasonantman.com> <http://www.jasonantman.com>
 
-    This file is part of python-package-skeleton, also known as python-package-skeleton.
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the “Software”), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
 
-    python-package-skeleton is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    python-package-skeleton is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-    You should have received a copy of the GNU Affero General Public License
-    along with python-package-skeleton.  If not, see <http://www.gnu.org/licenses/>.
-
-The Copyright and Authors attributions contained herein may not be removed or
-otherwise altered, except to add the Author attribution of a contributor to
-this work. (Additional Terms pursuant to Section 7b of the AGPL v3)
 ##################################################################################
 While not legally required, I sincerely request that anyone who finds
 bugs please submit them at <https://github.com/jantman/python-package-skeleton> or
